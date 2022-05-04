@@ -1,0 +1,231 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="V-Dream Development" />
+  <title>Veto</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+
+<body>
+  <div id="all">
+    <div class="cursor" style="transform: translate(1226px, 50px); opacity: 0.6"></div>
+    <div id="loader" style="transform: translate(0px, -100%); opacity: 0; display: none">
+      <span class="color">Veto</span>
+    </div>
+    <div id="breaker"></div>
+    <div id="breaker-two"></div>
+    <div id="navigation-content" style="display: flex">
+      <div class="navigation-close">
+        <span class="close-first"></span>
+        <span class="close-second"></span>
+      </div>
+      <div class="navigation-links">
+        <a data-text="HOME" id="home-link">HOME</a>
+        <a data-text="PROJET" id="about-link">PROJET</a>
+        <a data-text="CONDITIONS" id="rule-link">CONDITIONS</a>
+        <a data-text="INSTALLATION" id="install-link">INSTALLATION</a>
+      </div>
+    </div>
+    <div id="navigation-bar">
+      <div class="menubar">
+        <span class="first-span"></span>
+        <span class="second-span"></span>
+        <span class="third-span"></span>
+      </div>
+    </div>
+    <div id="header" style="display: block">
+      <div id="particles">
+        <canvas class="particles-js-canvas-el" width="1247" height="1029" style="width: 100%; height: 100%"></canvas>
+      </div>
+      <div class="header-content">
+        <div class="header-content-box">
+          <div class="firstline"><span class="color">Veto</span></div>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div id="about-content">
+        <div class="about-header">
+          Le <span class="color">projet</span>
+          <span class="header-caption">Une application lié <span class="color">à la politique ?</span></span>
+        </div>
+        <div class="about-main">
+          <div class="about-first-paragraph wow">
+            <span class="about-first-line">
+              Sensibilisation
+              <span class="color">des jeunes</span>
+              à la politique
+            </span>
+            <br />
+            <span class="about-second-line">
+              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+              bla bla bla bla.</span>
+            <div class="cv">
+              <a href="#"><button>Télécharger <span class="colors">ICI</span></button></a>
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="images/screenshot.jpg" alt="Your Image" />
+          </div>
+        </div>
+      </div>
+      <div id="services">
+        <div class="services-heading wow">
+          <span class="color">Notre</span> équipe
+        </div>
+        <div class="services-content">
+          <div class="service-one service wow">
+            <div class="service-description">
+              <h2>Alexandre</h2>
+              <p>
+                Apprenti informaticien au ceff industrie.
+              </p>
+            </div>
+          </div>
+          <div class="service-two service wow">
+            <div class="service-description">
+              <h2>Gabriel</h2>
+              <p>
+                Apprenti informaticien au ceff industrie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rule">
+      <div class="about-header">
+        Les conditions <span class="color">d'utilisation</span>
+        <span class="header-caption">Voici les conditions <span class="color">à jamais violer !</span></span>
+      </div>
+      <div class="about-main">
+        <div class="about-first-paragraph wow">
+          <span class="about-first-line">
+            <span class="color">Pas</span>
+            de discrimination
+          </span>
+          <span class="about-first-line">
+            <span class="color">Pas</span>
+            de homophobie
+          </span>
+          <span class="about-first-line">
+            <span class="color">Pas</span>
+            d'insulte
+          </span>
+          <span class="about-first-line">
+            <span class="color">Pas</span>
+            de sexisme
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="install">
+      <div class="about-header">
+        Installation
+        <span class="header-caption">Voici comment <span class="color">installer l'application</span></span>
+      </div>
+      <div id="services">
+        <div class="services-content">
+          <div class="service-one service wow">
+            <div class="service-description">
+              <h2>Étape 1</h2>
+              <p>
+                Rendez-vous dans la page projet et cliquer sur "télécharger ici"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services">
+          <div class="services-content">
+            <div class="service-one service wow">
+              <div class="service-description">
+                <h2>Étape 1</h2>
+                <p>
+                  Rendez-vous dans la page projet et cliquer sur "télécharger ici"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    particlesJS("particles", {
+      particles: {
+        number: { value: 120, density: { enable: true, value_area: 800 } },
+        color: { value: "#2196F3" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: true, speed: 0, size_min: 0.1, sync: false },
+        },
+        line_linked: {
+          enable: false,
+          distance: 0,
+          color: "#2196F3",
+          opacity: 0.24463576890600452,
+          width: 1.2626362266116362,
+        },
+        move: {
+          enable: true,
+          speed: 3,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false, mode: "grab" },
+          onclick: { enable: true, mode: "push" },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+  <style type="text/css">
+    .txt-rotate>.wrap {
+      border-right: 0em solid #666;
+    }
+  </style>
+</body>
+
+</html>
